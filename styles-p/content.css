@@ -8,18 +8,35 @@
   justify-content: center;
   z-index: -100;
 }
-.greeting h1 {
+.greeting h1, .greeting h2 {
   font-family: 'Times New Roman', Times, serif;
   font-size: 5rem;
-  padding:0 1em;
+  padding:0 4rem;
   color:rgb(255, 255, 255);
-  text-shadow: 2px 2px 3px rgba(0,0,0,.1);
+  text-shadow: 4px 4px 3px rgba(0,0,0,.2);
+  text-decoration: underline 10px aqua;
+  position: relative;
+}
+.greeting h2 {
+  font-size: 3rem;
+}
+.greeting h1::after, .greeting h2::after {
+  content:"";
+  height: 20px;
+  width:30px;
+  background-color: rgb(53, 53, 53);
+  position: absolute;
+  bottom:15px;
+  transform: rotate(-45deg) translate(-1.5rem, 0);
+}
+.greeting h2::after {
+  transform: rotate(-45deg) translate(-1.5rem, 10px);
+
 }
 
 .content {
   margin-top: 2em;
   padding-bottom: 3em;
-  border-bottom: 2px dashed;
   position:relative;
   isolation:isolate;
 }
@@ -34,11 +51,14 @@
 }
 
  .content h2 {
-  color:black;
-  text-decoration: underline;
+  width:8em;
+  background:linear-gradient(to right, black, #3d0b0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   padding: 1rem;
   padding-top: 4rem;
   font-size: 50px;
+  font-style: italic;
 }
 
 .proj-container {
@@ -83,13 +103,14 @@
   border-radius: 10px;
   box-shadow: 7px 7px 5px rgba(0,0,0,.3);
   cursor: pointer;
-  background: rgb(38, 71, 67);
-  color:rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+  color:rgb(39, 39, 39);
   position: relative;
 }
 .card-cover {
   font-size:30px;
   color:aqua;
+  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,11 +138,53 @@
 
 .about-me {
   padding: 20px;
-  border-bottom: 1px solid;
-  background: black;
+  padding-top: 80px;
+  color:white;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+.general-info {
+  border-right: 1px solid white;
+}
+.extracurriculars {
+  margin-left: 2em;
+}
+b {
+  font-size:2rem;
+  padding-bottom:.2em;
+  font-style: italic;
+  text-decoration: 2px underline;
+  color:white;
+  display: block;
+}
+.inputs-section {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mail-bio {
+  display: flex;
+}
+.mail-bio input {
+  flex:1;
+}
+.mail-input {
+  background-color: gray;
+  height:2em;
+  margin:10px;
+  vertical-align: middle;
+}
+.mail-input::placeholder {
+  font-size: 1.5em;
+  color: rgb(208, 208, 208);
+  vertical-align: top;
+}
+
+.message {
+  height:10em;
 }
 
 footer {
   padding: 10px;
-  background: black;
 }
