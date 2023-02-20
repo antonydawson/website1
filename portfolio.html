@@ -4,12 +4,18 @@
     </head>
   <link rel="stylesheet" href="styles-p/general.css">
   <link rel="stylesheet" href="styles-p/content.css">
+  <link rel="stylesheet" href="styles-p/header.css">
   <body>
     <main>
+      <header>
+        <a class="to-top" href="#to-top-anchor">HOME</a>
+        <a href="#to-top-anchor"><img src="images-p/user-profile-2.webp"></a>
+      </header>
+      <div id="to-top-anchor"></div>
       <div class="greeting">
-        <h1>Hi!</h1>
-          <h1>I'm Antony,</h1>
-          <h1>welcome to my website.</h1>
+        <h1>Hi!  &nbsp;</h1>
+          <h1>I'm Antony, &nbsp;</h1>
+          <h2>Welcome to an archive of my projects.&nbsp;</h2>
       </div>
 
       <div class="content">
@@ -59,36 +65,37 @@
         </div>
       </div>
 
-      <!-- <div class="upcoming">
-        <div class="upcoming-left">
-          <p>Upcoming projects:</p>
-          <ul>
-            <li>thing 1</li>
-            <li>thing 2</li>
-          </ul>
-        </div>
-        <div class="upcoming-right">
-          <img src="images-p/user.jpg">
-          <p>sneak peek</p>
-        </div>
-      </div> -->
-      
       <div class="about-me">
-        <div>
+        <div class="general-info">
           <b>About me:</b>
-          <p>Name:</p>
-          <p>Age:</p>
-          <p>Currently in:<p>
-          <p>Skills:</p>
-
+          <p>Name: Antony Dawson Chettattukaran</p>
+          <p>Age: 17</p>
+          <p>Currently in: 11th, DPGA<p>
+          <p>Skills: 3D modelling (blender), HTML/CSS (learning Javascript), Digital art, Drawing/Painting</p>
         </div>
-        <div></div>
+
+        <div class="extracurriculars">
+          <b>Extracurriculars:</b>
+          <ol>
+            <li>Deputy Head Boy - School Council</li>
+            <li>The Editorial Team</li>
+            <li>School Basketball Team</li>
+            <li>HFH (Habitat for Humanity) Campaigner</li>
+          </ol>
+        </div>
       </div>
       
       <footer>
-        <p>contact me:
-          <br>email: antonydawson151@gmail.com</br>
-        </p>
+        <b>contact me:</b>
+        <div class="inputs-section">
+          <div class="mail-bio">
+          <input class="mail-input" type="text" placeholder="First name"></input>
+          <input class="mail-input" type="text" placeholder="Surname"></input>
+          </div>
+          <input class="mail-input" type="text" placeholder="Subject"></input>
+          <textarea class="mail-input message" placeholder="Message"></textarea>
+        </div>
+
       </footer>
     </main>
   </body>
