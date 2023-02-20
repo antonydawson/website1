@@ -1,0 +1,12 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin:0;
+  color:#000000;
+  background-color: rgb(53, 53, 53);
+}
+img {
+  border-radius: 10px;
+}
+h1,h2,h3 {
+  margin:0;
+}
