@@ -5,7 +5,18 @@
   <link rel="stylesheet" href="styles-p/general.css">
   <link rel="stylesheet" href="styles-p/content.css">
   <link rel="stylesheet" href="styles-p/header.css">
+  <link rel="stylesheet" href="styles-p/cards.css">
   <body>
+    <script>
+      const btn = document.querySelector('.card1');
+      const cover = document.querySelector('.card-overlay');
+
+      btn.addEventListener(click, () => {
+        cover.classList.toggle('.closed');
+      })
+    
+    </script>
+
     <main>
       <header>
         <a class="to-top" href="#to-top-anchor">HOME</a>
@@ -18,11 +29,21 @@
           <h2>Welcome to an archive of my projects.&nbsp;</h2>
       </div>
 
+      <div class="card-overlay">
+        <p class="overlay-title">Lorem, ipsum dolor.</p>
+        <div class="images-container">
+          <img src="images-p/user.jpg" alt="random text here">
+          <!-- <img src="images-p/user.jpg" alt="random text here"> -->
+        </div> 
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati excepturi exercitationem deleniti earum ratione, delectus magnam libero, tenetur sunt veniam ullam, nihil facilis. Sequi est quidem nulla asperiores quam et harum tempore laborum exercitationem, rerum cupiditate hic reprehenderit suscipit provident labore earum dignissimos nisi ducimus sit voluptates optio impedit illum. Perspiciatis accusamus repellat, explicabo nulla suscipit, consequatur saepe ab, exercitationem architecto repellendus illo quia unde consectetur! Nostrum natus autem aperiam hic voluptas aliquam inventore corporis, repellat nulla voluptatem excepturi nesciunt et fugiat officiis ab eaque doloribus saepe itaque! Error, mollitia repellendus. Laborum nostrum aperiam labore ad architecto quasi dolor quaerat.</p>
+      </div>  
+
+
       <div class="content">
         <h2>Project Catalog:</h2>
         <div class="proj-container">
           <div class="card-container">
-            <div class="card">
+            <div class="card card1 closed" type="button">
               <div class="card-cover">Click me!</div>
               <p class="card-title">3D Robot Animation</p>
               <img src="images-p/user.jpg">
@@ -65,6 +86,7 @@
         </div>
       </div>
 
+
       <div class="about-me">
         <div class="general-info">
           <b>About me:</b>
@@ -80,22 +102,20 @@
             <li>Deputy Head Boy - School Council</li>
             <li>The Editorial Team</li>
             <li>School Basketball Team</li>
+            <li>Creative Expression Club President</li>
             <li>HFH (Habitat for Humanity) Campaigner</li>
           </ol>
         </div>
       </div>
       
-      <footer>
+      <footer id="form_parent">
         <b>contact me:</b>
-        <div class="inputs-section">
-          <div class="mail-bio">
-          <input class="mail-input" type="text" placeholder="First name"></input>
-          <input class="mail-input" type="text" placeholder="Surname"></input>
-          </div>
-          <input class="mail-input" type="text" placeholder="Subject"></input>
-          <textarea class="mail-input message" placeholder="Message"></textarea>
-        </div>
-
+        <form class="inputs-section" method="post" action="mailto:antonydawson151@gmail.com">
+          <input id="contact-name" class="mail-input" type="text" placeholder="Your name"></input>
+          <input id="subject" class="mail-input" type="text" placeholder="Subject"></input>
+          <textarea id="body" class="mail-input message" placeholder="Message"></textarea>
+        </form>
+        <button id="send" class="mail-input send">Send</button>
       </footer>
     </main>
   </body>
