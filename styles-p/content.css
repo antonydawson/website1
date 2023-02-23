@@ -163,28 +163,30 @@ b {
   flex-direction: column;
 }
 
-.mail-bio {
-  display: flex;
-}
-.mail-bio input {
-  flex:1;
-}
 .mail-input {
   background-color: gray;
   height:2em;
-  margin:10px;
-  vertical-align: middle;
+  border:none;
+  border-radius: 7px;
+  color:white;
+  font-size: 1rem;
+  resize: none;
+  width: 100%;
+  padding:none;
+  margin-bottom: 15px;
+  outline:none;
 }
 .mail-input::placeholder {
-  font-size: 1.5em;
-  color: rgb(208, 208, 208);
-  vertical-align: top;
+  color: rgb(236, 235, 235);
+  font-weight: 700;
 }
-
 .message {
   height:10em;
 }
-
+.send {
+  background: blue;
+  width: 5rem;
+}
 footer {
   padding: 10px;
 }
