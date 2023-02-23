@@ -5,8 +5,8 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   margin:0;
   color:#000000;
-  background-color: rgb(53, 53, 53);
-    padding-top:3.2em;
+  background-color: #353535;
+    padding-top:3rem;
 }
 img {
   border-radius: 10px;
