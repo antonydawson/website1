@@ -5,8 +5,11 @@ header {
     z-index: 100;
     color: white;
     text-align: center;
-    padding: 1.2em;
+    height: 3rem;
     border-bottom: 2px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 } 
 header img {
     height: 2em;
