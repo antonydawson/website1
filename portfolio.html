@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head><title>My Website</title>
+  </head>
+  <link rel="stylesheet" href="styles-p/general.css">
+  <link rel="stylesheet" href="styles-p/content.css">
+  <link rel="stylesheet" href="styles-p/header.css">
+  <body>
+
+    <main>
+      <header>
+        <a  href="#to-top-anchor"><img class="home" src="images-p/home.png" alt=""></a>
+        <a href="#to-top-anchor"><img class="profile" src="images-p/user-profile-2.webp"></a>
+      </header>
+      
+      <div id="to-top-anchor"></div>
+      <div class="greeting">
+        <h1>Hi!  &nbsp;</h1>
+          <h1>I'm Antony, &nbsp;</h1>
+          <h2>Welcome to an archive of my projects.&nbsp;</h2>
+      </div>
+
+      <div class="content">
+        <h2>Project Catalog:</h2>
+        <div class="proj-container">
+          <div class="card-container">
+            <div class="card">
+              <a class="card-cover" href="proj1.html" target="_self">Click me!</a>
+              <p class="card-title">3D Robot Animation</p>
+              <video src="assets/Final-robit.MP4"></video>
+              <p>This project was my first attempt at animating a mechanical creature and creating a composition around it.</p>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <a class="card-cover" href="proj2.html" target="_self">Click me!</a>
+              <p class="card-title">Sci-fi composition</p>
+              <video src="assets/sphere.MP4"></video>
+              <p>Project experimenting with cinematic compostion</p>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <a class="card-cover" href="proj3.html" target="_self">Click me!</a>
+              <p class="card-title">Art & Design #1</p>
+              <img src="assets/Portfolio 1_00001.jpg">
+              <p>Art & design portfolio of AS level</p>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <a class="card-cover" href="proj4.html" target="_self">Click me!</a>
+              <p class="card-title">Art & Design #2</p>
+              <img src="assets/Portfolio 2_00001.jpg">
+              <p>Art & design portfolio of AS level</p>
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <a class="card-cover" href="proj5.html" target="_self">Click me!</a>
+              <p class="card-title">Design concepts</p>
+              <img src="images-p/user.jpg">
+              <p>description</p>
+            </div>
+          </div>
+          <div class="card-blank">Coming soon!</div>
+        </div>
+      </div>
+
+
+      <div class="about-me">
+        <div class="general-info">
+          <b>About me:</b>
+          <p>Name: Antony Dawson Chettattukaran</p>
+          <p>Age: 17</p>
+          <p>Currently in: 11th, DPGA<p>
+          <p>Skills: 3D modelling (blender), HTML/CSS (learning Javascript), Digital art, Drawing/Painting</p>
+        </div>
+
+        <div class="extracurriculars">
+          <b>Extracurriculars:</b>
+          <ol>
+            <li>Deputy Head Boy - School Council</li>
+            <li>The Editorial Team</li>
+            <li>School Basketball Team</li>
+            <li>Creative Expression Club President</li>
+            <li>HFH (Habitat for Humanity) Campaigner</li>
+          </ol>
+        </div>
+      </div>
+      
+      <footer id="form_parent">
+        <b>contact me:</b>
+        <form class="inputs-section" method="post" action="mailto:antonydawson151@gmail.com">
+          <input id="contact-name" class="mail-input" type="text" placeholder="Your name"></input>
+          <input id="subject" class="mail-input" type="text" placeholder="Subject"></input>
+          <textarea id="body" class="mail-input message" placeholder="Message"></textarea>
+        </form>
+        <button id="send" class="mail-input send">Send</button>
+      </footer>
+    </main>
+  </body>
+</html>
